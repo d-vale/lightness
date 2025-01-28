@@ -2,6 +2,9 @@
 import { hexToHslArray, changeShadowColor } from "./modules/utils.js";
 import convert from "color-convert";
 import Color from "./modules/color.js";
+import { Notyf } from "notyf";
+import 'notyf/notyf.min.css'; // for React, Vue and Svelte
+const notyf = new Notyf();
 
 //Selector
 const input = document.querySelector("input");
@@ -17,7 +20,7 @@ input.addEventListener("keypress", (e) => {
       const palette = hexToHslArray(input.value); //Appel la fonction qui va générer la palette HSL
       displayColors(palette); //Appel la fonction display colors pour l'affichage
     } else {
-      console.log(`${input.value} n'est pas une valeur hexadécimal`);
+      notyf.error(`"${input.value}" n'est pas une valeur hexadécimal`);
     }
   }
 });
@@ -25,7 +28,8 @@ input.addEventListener("keypress", (e) => {
 //Fonction pour copier
 main.addEventListener("click", async (e) => {
   if (e.target.tagName === "DIV" && e.target.classList.value === "color") {
-     await navigator.clipboard.writeText(e.target.dataset.color); //Ceci nous retourne une promesse donc asynchrone donc utilisation async/await
+    await navigator.clipboard.writeText(e.target.dataset.color); //Ceci nous retourne une promesse donc asynchrone donc utilisation async/await
+    notyf.success(`copied ${e.target.dataset.color} to clipboard`)
   }
 });
 
