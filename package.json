@@ -1,0 +1,27 @@
+{
+  "name": "challenge17_lightness",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type":"module",
+  "private":true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"vite",
+    "build":"vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-vale/Lightness-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-vale/Lightness-JS/issues"
+  },
+  "homepage": "https://github.com/d-vale/Lightness-JS#readme",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.0.11"
+  }
+}
