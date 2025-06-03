@@ -128,7 +128,6 @@ Color palette to explore the use of Vite, npm, and Netlify with JS modules. This
 	</details>
 </details>
 
----
 
 ## 🚀 Getting Started
 
