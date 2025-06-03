@@ -23,7 +23,6 @@
 </div>
 <br>
 
----
 
 ## 📄 Table of Contents
 
@@ -34,7 +33,6 @@
     - [Usage](#-usage)
     - [Testing](#-testing)
 
----
 
 ## ✨ Overview
 
@@ -47,8 +45,6 @@ Color palette to explore the use of Vite, npm, and Netlify with JS modules. This
 - 📋 **Clipboard Functionality:** Easily copy color values to streamline your workflow and enhance productivity.
 - 🌈 **Interactive User Interface:** A responsive UI that allows users to input color codes and visualize results instantly.
 - ✨ **Utility Functions:** Built-in functions for color manipulation, making customization a breeze.
-
----
 
 ### 📑 Project Index
 
